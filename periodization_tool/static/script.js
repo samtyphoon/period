@@ -1,5 +1,5 @@
 document.getElementById('sessionForm').addEventListener('submit', function(e) {
-    e.preventDefault();  // Previene il ricaricamento della pagina
+    e.preventDefault();  
     const weight = document.getElementById('weight').value;
     const reps = document.getElementById('reps').value;
     const sets = document.getElementById('sets').value;
@@ -22,3 +22,4 @@ document.getElementById('sessionForm').addEventListener('submit', function(e) {
     })
     .catch(error => console.error('Errore:', error));
 });
+//questo codice è generato in parte e sto cercando di capirlo bene la prima parte pulla le info 
