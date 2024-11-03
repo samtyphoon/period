@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodization Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Periodization Tool</h1>
+    <form id="sessionForm">
+        <label for="weight">Peso Usato (kg):</label>
+        <input type="number" id="weight" required>
+
+        <label for="reps">Ripetizioni Effettuate:</label>
+        <input type="number" id="reps" required>
+
+        <label for="sets">Numero di Serie:</label>
+        <input type="number" id="sets" required>
+
+        <label for="fatigue">Fatica (1-10):</label>
+        <input type="number" id="fatigue" min="1" max="10" required>
+
+        <button type="submit">Salva Sessione</button>
+    </form>
+
+    <div id="feedback">
+        <!-- Qui appariranno i suggerimenti per la prossima fase -->
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
+
