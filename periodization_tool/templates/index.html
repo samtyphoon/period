@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Periodization Tool</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Collega il CSS -->
 </head>
 <body>
     <h1>Periodization Tool</h1>
+    
+    <!-- Form per inserire i dati della sessione di allenamento -->
     <form id="sessionForm">
         <label for="weight">Peso Usato (kg):</label>
         <input type="number" id="weight" required>
@@ -18,18 +20,22 @@
         <label for="sets">Numero di Serie:</label>
         <input type="number" id="sets" required>
 
-        <label for="fatigue">Fatica (1-10):</label>
+        <label for="fatigue">Fatica percepita (1-10):</label>
         <input type="number" id="fatigue" min="1" max="10" required>
 
         <button type="submit">Salva Sessione</button>
     </form>
-
-    <div id="feedback">
-        #mi serve una modo per visualizzare il maniera chiara il prossimo allenamento 
+    
+    
+    <div id="progress">
+    <h3>Grafico dei Progressi</h3>
+    <canvas id="progressChart"></canvas>
     </div>
 
+    <div id="feedback">
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/static/script.js"></script>
 </body>
 </html>
-
-
